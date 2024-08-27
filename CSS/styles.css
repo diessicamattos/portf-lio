@@ -31,7 +31,7 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    overflow: hidden; 
+    /*overflow: hidden;*/ 
 }
 
 h2{
