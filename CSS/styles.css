@@ -158,6 +158,7 @@ span{
     color: var(--text-color);
     }
 
+<<<<<<< HEAD
     /* GRID maior */
 .portfolio-container {
     display: grid;
@@ -225,6 +226,8 @@ span{
 .prev { left: 10px; }
 .next { right: 10px; }
 
+=======
+>>>>>>> 7f9c72dc9bda313da1761fcf1497ca7d3cfad0ff
 
 .portfolio h2,
 .contact h2{
@@ -279,6 +282,74 @@ span{
     overflow: hidden;
     text-overflow: allipsis;
 }
+
+/* GRID maior */
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    gap: 2rem;
+}
+
+/* CARD */
+.portfolio-box {
+    background: #2f3441;
+    padding: 1rem;
+    border-radius: 18px;
+    transition: .3s;
+}
+
+.portfolio-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px rgba(0,255,255,0.25);
+}
+
+/* CARROSSEL MAIOR */
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 330px;   /* AUMENTADO */
+    overflow: hidden;
+    border-radius: 14px;
+}
+
+/* IMAGENS */
+.carousel img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+
+.carousel img.active {
+    opacity: 1;
+}
+
+/* BOTÕES */
+.carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,0.3);
+    color: #fff;
+    border: none;
+    padding: 10px 14px;
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+    transition: .2s;
+}
+
+.carousel button:hover {
+    background: rgba(255,255,255,0.6);
+}
+
+/* Botão Esquerda / Direita */
+.prev { left: 10px; }
+.next { right: 10px; }
+
 
 .portfolio{
     background-color: var(--bg-color-02);
